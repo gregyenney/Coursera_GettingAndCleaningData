@@ -1,50 +1,49 @@
-================================================================================
+---
 Code Book 
 
 Course Project
 
 Coursera Course:  Getting and Cleaning Data
-================================================================================
+---
 
-================================================================================
+---
 Introduction
-================================================================================
+---
 
 This code book describes the tidy data set produced from the "Human Activity 
 Recognition Using Smartphones Dataset Version 1.0".  
 
 Included in the data set are:
  
-	- The original raw data: 
-		* getdata_projectfiles_UCI HAR Dataset.zip
-		* source:  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+	* The original raw data: 
+		** getdata_projectfiles_UCI HAR Dataset.zip
+		** source:  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-	- a script which transforms the raw data into a tidy data.
-		* "run_analysis.R"
+	* a script which transforms the raw data into a tidy data.
+		** "run_analysis.R"
 
-	- The tidy data set consisting of the following:
+	* The tidy data set consisting of the following:
 
-		* The initial tidy data set extracted from the raw data.
+		** The initial tidy data set extracted from the raw data.
 			file:  tidy_data/tidy_data.csv 
 
-		* The secondary data which contains the mean of each value 
+		** The secondary data which contains the mean of each value 
 		  grouped by subject and activity.
 			file:  tidy_data/tidy_means_data.csv
 
-	- a Code Book describing the tidy data set and transformation process 
+	* a Code Book describing the tidy data set and transformation process 
           (this file).
 
-	- a readme file (README.md) describing the git repo contents.
+	* a readme file (README.md) describing the git repo contents.
 
 
-
-================================================================================
+---
 Code Book
-================================================================================
+---
 
-================================================================================
+---
 Study Design
-================================================================================
+---
 
 The tidy data set provided here can be recreated with the following steps.
 
@@ -63,11 +62,15 @@ The tidy data set provided here can be recreated with the following steps.
 	4.  Create the tidy data set by Executing the R program run_analysis.R 
 
 
-###############################################################################
+
+
+
+---
+---
 Raw Data Set Description below this point.
 
-
-###############################################################################
+---
+---
 
 Instructions:
 
@@ -96,7 +99,7 @@ Version 1.0
 ==================================================================
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Universit‡ degli Studi di Genova.
+DITEN - Universit√† degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
