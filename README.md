@@ -10,7 +10,34 @@ README.md
 This repositority contains a new tidy data set based on the UCI Human Activities Recognition data set.  See below for instructions on producing the tidy dataset and see the Code Book (<https://github.com/gregyenney/Coursera_GettingAndCleaningData/edit/main/CodeBook.md>) for more details on the data.
 
 ---
-Instructions 
+
+### Repo Contents
+
+---
+
+Included in the data set are:
+
+* The original raw data.
+    * getdata_projectfiles_UCI HAR Dataset.zip
+    * Located at:  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+* A script which transforms the raw data into a new tidy data set.
+    * "run_analysis.R"
+
+* The tidy data set consisting of the following:
+    * The initial tidy data set extracted from the raw data: ```tidy_data/tidy_data.csv```
+          
+    * A secondary tidy data set summarizing the initial data:  ```tidy_data/tidy_means_data.csv```
+
+* A Code Book describing the tidy data sets and transformation process (```CodeBook.md```).
+
+* A readme file (this file) describing the git repo.
+
+
+---
+
+### Instructions 
+
 ---
 
 The tidy data set provided in this repo can be recreated with the following steps.
