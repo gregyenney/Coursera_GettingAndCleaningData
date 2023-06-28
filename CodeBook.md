@@ -8,7 +8,7 @@ CodeBook.md
 
 
 ---
-### Introduction
+## Introduction
 ---
 
 This code book describes the tidy data sets extracted from and based on the "Human Activity 
@@ -36,7 +36,7 @@ Included in the data set are:
 
 
 ---
-### Study Design
+## Study Design
 ---
 
 The tidy data set provided here was built from the raw "UCI Human Activity Recognition Using Smartphones Dataset Version 1.0"
@@ -54,10 +54,10 @@ The file ```tidy_means_data.csv``` was created from tidy_data.csv by:
 
 
 ---
-### Code Book
+## Code Book
 ---
 
-#### The raw  data consist of:
+### The raw data consist of:
 * Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 * Triaxial Angular velocity from the gyroscope.
 * A 561-feature vector with time and frequency domain variables.
@@ -67,8 +67,10 @@ The file ```tidy_means_data.csv``` was created from tidy_data.csv by:
     #### Note:  
     * Features are normalized and bounded within [-1,1].
     * Each feature vector is a row on the text file.
+      
+*Please see the raw data in* ```getdata_projectfiles_UCI HAR Dataset.zip``` *for more detail.*
 
-#### The tidy_data:
+### The tidy_data:
 For each record in the raw data, the tidy data set selects and renames the mean and standard deviation measures noted by "-mean()" and "-std()"
 and integrates the corresponding subject and human readable activity names.  In addition, the data is further summarized into a second data set to 
 provide the mean value of each measure as grouped by subject and activity.
