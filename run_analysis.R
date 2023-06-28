@@ -1,9 +1,12 @@
 library(dplyr)
 
 ###############################################################################
-# Raw Data Files
+# Data Files
 ###############################################################################
 
+raw_data_url         <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+raw_data_zip_file    <- "./getdata_projectfiles_UCI HAR Dataset.zip"
+raw_data_dir         <- "./UCI\ HAR\ Dataset/"
 activity_labels_file <- "./UCI\ HAR\ Dataset/activity_labels.txt"
 feature_labels_file  <- "./UCI\ HAR\ Dataset/features.txt"
 train_measures_file  <- "./UCI\ HAR\ Dataset/train/X_train.txt"
@@ -171,6 +174,14 @@ get_tidy_means_df <- function(tidy_df) {
 
   tidy_means_df
 }
+
+
+###############################################################################
+# Download and Extract the Raw Data for Analysis
+###############################################################################
+
+download.file(raw_data_url, destfile=raw_data_zip_file, method="curl")
+unzip(raw_data_zip_file)
 
 ###############################################################################
 # Create The Tidy Data Set
