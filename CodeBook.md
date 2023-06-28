@@ -1,9 +1,7 @@
 ---
 ## Course: Coursera - Getting And Cleaning Data
 
-## Course Project
-
-##### by Greg Yenney
+## Final Project
 ---
 
 
