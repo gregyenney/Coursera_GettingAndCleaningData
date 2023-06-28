@@ -1,7 +1,9 @@
-# README.md
+README.md
+---
+## Course: Coursera - Getting And Cleaning Data
 
-# Course: Coursera_GettingAndCleaningData
 ## Final Project
+---
 
 
 This repositority contains a new tidy data set based on the UCI Human Activities Recognition data set.  See below for instructions on producing the tidy dataset and see the Code Book (<https://github.com/gregyenney/Coursera_GettingAndCleaningData/edit/main/CodeBook.md>) for more details on the data.
