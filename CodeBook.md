@@ -13,7 +13,7 @@ CodeBook.md
 
 This code book describes the tidy data sets extracted from and based on the "Human Activity 
 Recognition Using Smartphones Dataset Version 1.0".  The tidy data was 
-produced as the final project in the Getting and Cleaning Data course.
+produced as the final project for the Getting and Cleaning Data course.
 
 Included in the data set are:
 
