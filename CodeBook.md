@@ -1,10 +1,10 @@
 ---
 
-# Code Book 
+# CodeBook.md 
 
 ## Course Project
 
-## Coursera Course -- Getting and Cleaning Data
+## Course: Coursera - Getting And Cleaning Data
 
 ---
 
@@ -14,8 +14,8 @@
 ---
 
 This code book describes the tidy data set based on the "Human Activity 
-Recognition Using Smartphones Dataset Version 1.0".  This data set was 
-produced as the final project in the Getting and Recording data course.
+Recognition Using Smartphones Dataset Version 1.0".  The tidy data set was 
+produced as the final project in the Getting and Cleaning Data course.
 
 Included in the data set are:
 
@@ -23,16 +23,17 @@ Included in the data set are:
     * getdata_projectfiles_UCI HAR Dataset.zip
     * Located at:  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-* A script which transforms the raw data into a tidy data.
+* A script which transforms the raw data into a new tidy data set.
     * "run_analysis.R"
 
 * The tidy data set consisting of the following:
     * The initial tidy data set extracted from the raw data.
-        * file:  tidy_data/tidy_data.csv 
-    * The secondary data which contains the mean of each value grouped by subject and activity.
+        * file:  tidy_data/tidy_data.csv
+          
+    * The secondary tidy data set which contains the mean of each measured value in the initial tidy data set grouped by subject and activity.
         * file:  tidy_data/tidy_means_data.csv
 
-* A Code Book describing the tidy data set and transformation process (this file).
+* A Code Book describing the tidy data sets and transformation process (this file).
 
 * A readme file (README.md) describing the git repo.
 
@@ -57,32 +58,6 @@ The file tidy_means_data.csv was created from tidy_data.csv by:
 Code Book
 ---
 
----
-Instructions (MOVE TO README.md)
----
-
-The tidy data set provided here can be recreated with the following steps.
-
-1.  Clone this repo into your local workspace.
-
-     ```git clone https://github.com/gregyenney/Coursera_GettingAndCleaningData.git```
-
-1.  Download the source raw data and place it in your repo local workspace directory.
-
-     ```https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip```
-
-1.  Navigate into the local workspace directory. 
-
-    ```cd Coursera _GettingAndCleaningData```
-
-1.  Extract the raw data in your local workspace directory.
-
-     ```unzip getdata_projectfiles_UCI HAR Dataset.zip```
-
-1.  Create the tidy data set by Executing the R program run_analysis.R
-
-    ```Rscript run_analysis.R```
-
 
 
 ---
@@ -92,7 +67,21 @@ Raw Data Set Description below this point.
 
 ---
 ---
+The raw data is used pursuant to the following license:
 
+```
+    Use of this dataset in publications must be acknowledged by referencing the following publication [1]
+
+    [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity
+    Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International
+    Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+```
+
+
+
+---
+Appendix
+---
 Instructions:
 
 	1. The raw data
