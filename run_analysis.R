@@ -180,20 +180,11 @@ get_tidy_means_df <- function(tidy_df) {
 if (! file.exists(tidy_data_dir)) { dir.create(tidy_data_dir)}
 
 tidy_df <- get_tidy_df()
-write.csv(tidy_df, file=tidy_data_file, row.names=FALSE)
+write.table(tidy_df, file=tidy_data_file, sep=",", row.names=FALSE)
 
-v_df <- get_validation_df()
-write.csv(v_df, file=validation_data_file, row.names=FALSE)
+#v_df <- get_validation_df()
+#write.table(v_df, file=validation_data_file, sep=",", row.names=FALSE)
 
 tidy_means_df <- get_tidy_means_df(tidy_df)
-write.csv(tidy_means_df, file=tidy_means_data_file, row.names=FALSE)
-
-
-# Create the second, colMeans dataset.
-#tidy_means <- lapply(split(tidy_df, ~ subject_id + activity_name), function(x) { colMeans(x[,3:68]) } )
-#tidy_means_binded <- bind_rows(tidy_means)
-#first_elements <- lapply(strsplit(names(tidy_means),"\\."), function(x) { as.integer(x[1]) })
-#second_elements <- lapply(strsplit(names(tidy_means),"\\."), function(x) { x[2] })
-#tidy_means_subject_activity_df <- data.frame(subject_id=c(unlist(first_elements)), activity_name=c(unlist(second_elements)),tidy_means_binded, stringsAsFactors=TRUE)
-
+write.table(tidy_means_df, file=tidy_means_data_file, sep=",", row.names=FALSE)
 
