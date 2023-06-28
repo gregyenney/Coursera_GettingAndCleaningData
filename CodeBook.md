@@ -34,7 +34,7 @@ Included in the data set are:
 
 ## Raw Data Source
 
---
+---
 
 * The original raw data.
     * getdata_projectfiles_UCI HAR Dataset.zip
