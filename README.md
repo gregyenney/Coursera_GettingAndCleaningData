@@ -17,10 +17,6 @@ This repositority contains a new tidy data set based on the UCI Human Activities
 
 Included in the data set are:
 
-* The original raw data.
-    * getdata_projectfiles_UCI HAR Dataset.zip
-    * Located at:  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-
 * A script which transforms the raw data into a new tidy data set.
     * "run_analysis.R"
 
